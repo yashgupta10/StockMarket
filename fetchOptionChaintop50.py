@@ -33,7 +33,6 @@ def get_processed_options(symbol,date,workDir):
     underlying_price_right = underlying_price + (underlying_price/10)
     #get options table
     optTable = soup.find("table", attrs={"id": "octable"})
-    #optTableData = optTable.tbody.find_all("tr")  # contains 2 rows
     optTableData = optTable.find_all('tr')
     # Get all the headings of Lists
     headings = []
